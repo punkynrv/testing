@@ -12,8 +12,8 @@ public class BasicTest {
 
     @BeforeTest
     public void startTest() {
-        SwagTest.driver = SeleniumDriver.setLocalDriver();
-//        BasicTest.driver = SeleniumDriver.getRemoteDriver();
+//        SwagTest.driver = SeleniumDriver.setLocalDriver();
+        BasicTest.driver = SeleniumDriver.getRemoteDriver();
     }
 
     @AfterTest
