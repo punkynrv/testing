@@ -25,14 +25,18 @@ public class SwagTest {
     }
 
     @Test
-    public void firstTest() {
+    public void firstTest() throws InterruptedException {
         driver.get(URL_TEST);
 //        driver.manage().window().maximize();
 
         Login login = new Login(driver);
+        Thread.sleep(1000);
         login.setUserName(USER_NAME);
+        Thread.sleep(1000);
         login.setUserPassword(USER_PASSWORD);
+        Thread.sleep(1000);
         login.clickSend();
+        Thread.sleep(1000);
         actualTitle = login.getTitleText();
         Assert.assertEquals(actualTitle,TITLE,"Welcome");
 
