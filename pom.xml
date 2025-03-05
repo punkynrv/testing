@@ -36,7 +36,20 @@
       <version>7.10.2</version>
       <scope>test</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-log4j12</artifactId>
+      <version>1.7.36</version> <!-- Match the SLF4J version in your project -->
+    </dependency>
+
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.17</version> <!-- Already included, just ensure correct version -->
+    </dependency>
 
 
   </dependencies>

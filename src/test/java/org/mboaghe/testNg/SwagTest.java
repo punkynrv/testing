@@ -10,19 +10,16 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class SwagTest {
+public class SwagTest extends BasicTest{
 
-    public static WebDriver driver;//for what static?
+    //for what static?
+
     public static String URL_TEST = "https://www.saucedemo.com/";
     public static String USER_NAME = "standard_user";
     public static String USER_PASSWORD = "secret_sauce";
     public static String TITLE = "Products";
     public static String actualTitle;
-    @BeforeTest
-    public void startTest() {
-//        SwagTest.driver = SeleniumDriver.setLocalDriver();
-        SwagTest.driver = SeleniumDriver.getRemoteDriver();
-    }
+
 
     @Test
     public void firstTest() throws InterruptedException {
@@ -46,8 +43,5 @@ public class SwagTest {
         System.out.println();
     }
 
-    @AfterTest
-    public void stopTest() {
-        driver.quit();
-    }
+
 }
