@@ -20,8 +20,8 @@ public class SwagTest {
     public static String actualTitle;
     @BeforeTest
     public void startTest() {
-        SwagTest.driver = SeleniumDriver.setLocalDriver();
-//        SwagTest.driver = SeleniumDriver.getRemoteDriver();
+//        SwagTest.driver = SeleniumDriver.setLocalDriver();
+        SwagTest.driver = SeleniumDriver.getRemoteDriver();
     }
 
     @Test
